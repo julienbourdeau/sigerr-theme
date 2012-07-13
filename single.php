@@ -8,8 +8,8 @@
 
 get_header(); ?>
 
-		<div id="primary" class="site-content">
-			<div id="content" role="main">
+		<div id="primary" class="site-content row">
+			<div id="content" role="main" class="span8 offset2">
 
 			<?php while ( have_posts() ) : the_post(); ?>
 
@@ -30,5 +30,4 @@ get_header(); ?>
 			</div><!-- #content -->
 		</div><!-- #primary .site-content -->
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>
