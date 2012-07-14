@@ -1,0 +1,30 @@
+.clear { clear:both; }
+.big-icons {
+  float:left;
+  width:28px;
+  height:24px;
+}
+#skype { background:url('../images/icons.png') -80px -40px; }
+#phone { background:url('../images/icons.png') -160px -40px; }
+a.social_link {
+  display:block;
+  float:left;
+  width:32px;
+  height:32px;
+  margin:6px 12px 0 0;
+  overflow:hidden;
+}
+a#linkedin { background:url('../images/icons.png') 0px 0; }
+a#facebook { background:url('../images/icons.png') -40px 0; }
+a#googleplus { background:url('../images/icons.png') -80px 0; }
+a#twitter { background:url('../images/icons.png') -120px 0; }
+a#tumblr { background:url('../images/icons.png') -160px 0; }
+a#youtube { background:url('../images/icons.png') -200px 0; }
+a#flickr { background:url('../images/icons.png') -240px 0; }
+a#github { background:url('../images/icons.png') -320px 0; }
+a.big-pdf-icon {
+  display:block;
+  width:100px;
+  height:100px;
+  background:url('../images/icons.png') 0 -80px;
+}
