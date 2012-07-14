@@ -11,10 +11,16 @@
 		<h1 class="entry-title"><?php the_title(); ?></h1>
 	</header><!-- .entry-header -->
 
+
+	<?php sigerr_content_extrabuttons() ?>
+
+
 	<div class="entry-content">
 		<?php the_content(); ?>
 		<?php wp_link_pages( array( 'before' => '<div class="page-links">' . __( 'Pages:', 'sigerr' ), 'after' => '</div>' ) ); ?>
 	</div><!-- .entry-content -->
+
+	<?php sigerr_content_extrabuttons() ?>
 
 	<footer class="entry-meta">
 		<?php

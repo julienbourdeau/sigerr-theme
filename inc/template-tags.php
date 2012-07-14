@@ -47,6 +47,41 @@ function sigerr_content_nav( $nav_id ) {
 }
 endif; // sigerr_content_nav
 
+
+if ( ! function_exists( 'sigerr_content_extrabuttons' ) ):
+/**
+ * Display navigation to next/previous pages when applicable
+ *
+ * @since _s 1.0
+ */
+function sigerr_content_extrabuttons() {
+	global $post;
+
+	$demo = get_post_meta($post->ID, "demo_link", true);
+	$download = get_post_meta($post->ID, "download_link", true);
+	
+	if($demo || $download): ?>
+
+		<div id="extrabuttons" class="">
+			<?php if($demo):  ?>
+			    <a class="btn btn-well-large" href="<?php echo $demo; ?>">
+			        <i class="icon icon-play"></i> Demo
+			    </a>
+			<?php endif; ?>
+
+			<?php if($download): ?>
+			    <a class="btn btn-well-large btn-inverse" href="<?php echo $download; ?>">
+			        <i class="icon icon-gift icon-white"></i> Download
+			    </a>
+			<?php endif; ?> 
+		</div>
+
+	<?php 
+	endif;
+}
+endif; // sigerr_content_extrabuttons
+
+
 if ( ! function_exists( 'sigerr_comment' ) ) :
 /**
  * Template for comments and pingbacks.
