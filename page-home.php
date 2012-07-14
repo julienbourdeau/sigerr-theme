@@ -16,7 +16,7 @@ Template Name: Home Page
 
 get_header(); ?>
 
-		<div id="primary" class="site-content full-width">
+		<div id="primary" class="site-content span12 full-width">
 			<div id="content" role="main">
 
 				<?php while ( have_posts() ) : the_post(); ?>
