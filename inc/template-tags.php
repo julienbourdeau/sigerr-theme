@@ -65,13 +65,13 @@ function sigerr_content_extrabuttons() {
 		<div id="extrabuttons" class="">
 			<?php if($demo):  ?>
 			    <a class="btn btn-well-large" href="<?php echo $demo; ?>">
-			        <i class="icon icon-play"></i> Demo
+			        <i class="icon icon-play"></i> <?php echo __('Demo', 'sigerr'); ?>
 			    </a>
 			<?php endif; ?>
 
 			<?php if($download): ?>
 			    <a class="btn btn-well-large btn-inverse" href="<?php echo $download; ?>">
-			        <i class="icon icon-gift icon-white"></i> Download
+			        <i class="icon icon-gift icon-white"></i> <?php echo __('Download', 'sigerr'); ?>
 			    </a>
 			<?php endif; ?> 
 		</div>
