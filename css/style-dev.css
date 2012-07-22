@@ -2799,7 +2799,7 @@ a.label:hover, a.badge:hover {
   font-size:16px;
   line-height:21px;
 }
-.entry-content p, .entry-summary p { margin:0 0 2em 0; }
+.entry-content p, .entry-summary p { margin:0 0 1.5em; }
 .page-links {
   clear:both;
   margin:0 0 1.5em;
