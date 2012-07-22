@@ -17,7 +17,14 @@
 
 	<div class="entry-content">
 		<?php the_content(); ?>
-		<?php wp_link_pages( array( 'before' => '<div class="page-links">' . __( 'Pages:', 'sigerr' ), 'after' => '</div>' ) ); ?>
+		<?php wp_link_pages( 
+							array( 
+								'before' => '<div class="pagination post-inside-pages"><ul>', 
+								'after' => '</ul></div>',
+								'link_before'  => '<li>',
+								'link_after'  => '</li>'
+								 ) 
+							); ?>
 	</div><!-- .entry-content -->
 
 	<?php sigerr_content_extrabuttons() ?>
