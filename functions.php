@@ -23,20 +23,19 @@ if( ENV == 'dev' && !is_admin() ) {
 
 	require 'lib/lessc.inc.php';
 
-	$style = get_template_directory() . '/css/style-dev.css';
-	$files = array( 
-				get_template_directory() . '/css/styles.less'
-			);
-	  
-	$lc = new lessc();  
-	$css = '';  
+	$less_file = get_template_directory() . '/css/styles.less';
+	$css_file = get_template_directory() . '/css/style-dev.css';
 
-	foreach($files as $file){  
-		$css .= file_get_contents($file);  
-	}  
+	// create a new cache object, and compile
+	$cache = lessc::cexecute( $less_file );
+	file_put_contents($css_file, $cache['compiled']);
 
-	$css = $lc->parse($css);  
-	file_put_contents($style, $css);
+	// the next time we run, write only if it has updated
+	$last_updated = $cache['updated'];
+	$cache = lessc::cexecute($cache);
+	if ($cache['updated'] > $last_updated) {
+	    file_put_contents($css_file, $cache['compiled']);
+	}
 
 }
 
@@ -155,18 +154,16 @@ function sigerr_scripts() {
 	global $post;
 
 	wp_enqueue_style( 'style', get_stylesheet_uri() );
-
-	if ( ENV == 'dev' && !is_admin() ) {
-		wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/css/bootstrap.css', array( 'style' ) );
-		wp_enqueue_style( 'bootstrap-responsive', get_template_directory_uri() . '/css/bootstrap-responsive.css', array( 'style', 'bootstrap' ) );
-	}
 	
 	if ( defined('ENV') && !is_admin() ) {
 		wp_enqueue_style( 'style-dev', get_template_directory_uri() . '/css/style-'.ENV.'.css', array( 'style' ) );
 	}
 
 	wp_enqueue_script( 'small-menu', get_template_directory_uri() . '/js/small-menu.js', array( 'jquery' ), '20120206', true );
-	wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/js/bootstrap.min.js', array( 'jquery' ), '2.0.4', true );
+
+	if ( defined('ENV') && !is_admin() ) {
+		wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/js/bootstrap-'.ENV.'.min.js', array( 'jquery' ), '2.0.4', true );
+	}
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
