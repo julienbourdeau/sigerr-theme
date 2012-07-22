@@ -8,7 +8,7 @@
 
 get_header(); ?>
 
-		<div id="primary" class="site-content span8 offset2">
+		<div id="primary" class="site-content span12">
 			<div id="content" role="main">
 
 			<?php while ( have_posts() ) : the_post(); ?>
