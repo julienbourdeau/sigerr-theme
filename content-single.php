@@ -37,7 +37,7 @@
 
 				/* translators: used between list items, there is a space after the comma */
 				$category_list = get_the_category_list( __( ', ', 'sigerr' ) );
-				$tags = get_tags();
+				$tags = get_the_tags();
 
 				foreach ($tags as $tag){
 					$tag_link = get_tag_link($tag->term_id);

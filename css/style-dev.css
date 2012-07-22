@@ -2678,7 +2678,7 @@ a.label:hover, a.badge:hover {
   .thumbnails { margin-left:-30px; }
   .thumbnails > li { margin-left:30px; }
   .row-fluid .thumbnails { margin-left:0; }
-  #content {
+  .single #content, .page-template-page-full-width-php #content {
     width:70%;
     min-width:770px;
     margin-left:auto;
