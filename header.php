@@ -58,7 +58,11 @@
 						<h1 class="assistive-text"><?php _e( 'Menu', 'sigerr' ); ?></h1>
 						<div class="assistive-text skip-link"><a href="#content" title="<?php esc_attr_e( 'Skip to content', 'sigerr' ); ?>"><?php _e( 'Skip to content', 'sigerr' ); ?></a></div>
 
-						<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+						<?php wp_nav_menu( 
+											array( 	'theme_location' 	=> 'primary',
+													'menu_class'		=> 'nav nav-pills pull-right',
+												 )
+										 ); ?>
 					</nav>
 				</div>
 

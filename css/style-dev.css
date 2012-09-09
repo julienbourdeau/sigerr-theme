@@ -2086,7 +2086,7 @@ button.btn.btn-mini, input[type="submit"].btn.btn-mini {
   -moz-border-radius:5px;
   border-radius:5px;
 }
-.nav-pills > .active > a, .nav-pills > .active > a:hover {
+.nav-pills > .active > a, .nav-pills > .active > a:hover, .nav-pills > .current-menu-item > a, .nav-pills > .current-menu-item > a:hover, .nav-pills > .current_page_parent > a, .nav-pills > .current_page_parent > a:hover {
   color:#fff;
   background-color:#08c;
 }
@@ -3804,6 +3804,15 @@ a.label:hover, a.badge:hover {
   padding:12px 16px;
 }
 .btn-well-large .icon { margin-top:3px; }
+h1.site-title a {
+  display:block;
+  width:250px;
+  height:75px;
+  background:url('../images/logo.png');
+  text-indent:-999px;
+  overflow:hidden;
+}
+.menu-access-container { margin-top:24px; }
 .hentry { margin:0 0 1.5em; }
 .entry-meta { clear:both; }
 .byline { display:none; }
