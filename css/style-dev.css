@@ -3824,6 +3824,26 @@ h1.site-title  a {
   clear:both;
   margin:0 0 1.5em;
 }
+.blog-list article {
+  margin:24px 0;
+  *zoom:1;
+}
+.blog-list article:before, .blog-list article:after {
+  display:table;
+  content:"";
+  line-height:0;
+}
+.blog-list article:after { clear:both; }
+.blog-list header, .blog-list header h2 {
+  margin:0;
+  padding:0;
+}
+.blog-list .date {
+  font-size:1.2em;
+  line-height:40px;
+}
+.blog-list .entry-meta { margin:6px 0 0 0; }
+.blog-list p { margin:0; }
 a[rel=tag] { text-decoration:none; }
 a[rel=tag] span.label { margin-right:5px; }
 .clear { clear:both; }

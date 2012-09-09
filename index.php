@@ -14,12 +14,12 @@
 
 get_header(); ?>
 
-		<div id="primary" class="site-content span8">
+		<div id="primary" class="site-content span12">
 			<div id="content" role="main">
 
 			<?php if ( have_posts() ) : ?>
 
-				<?php sigerr_content_nav( 'nav-above' ); ?>
+				<?php //sigerr_content_nav( 'nav-above' ); ?>
 
 				<?php /* Start the Loop */ ?>
 				<?php while ( have_posts() ) : the_post(); ?>
@@ -29,12 +29,12 @@ get_header(); ?>
 						 * If you want to overload this in a child theme then include a file
 						 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
 						 */
-						get_template_part( 'content', get_post_format() );
+						get_template_part( 'content', 'blog' );
 					?>
 
 				<?php endwhile; ?>
 
-				<?php sigerr_content_nav( 'nav-below' ); ?>
+				<?php //sigerr_content_nav( 'nav-below' ); ?>
 
 			<?php elseif ( current_user_can( 'edit_posts' ) ) : ?>
 
@@ -45,5 +45,5 @@ get_header(); ?>
 			</div><!-- #content -->
 		</div><!-- #primary .site-content -->
 
-<?php get_sidebar(); ?>
+<?php //get_sidebar(); ?>
 <?php get_footer(); ?>
