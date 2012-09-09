@@ -359,9 +359,9 @@ em { font-style:italic; }
 cite { font-style:normal; }
 .muted { color:#999; }
 h1, h2, h3, h4, h5, h6 {
-  margin:10px 0;
-  font-family:inherit;
-  font-weight:bold;
+  margin:40px 0 10px 0;
+  font-family:titleSerifFontFamily;
+  font-weight:normal;
   line-height:1;
   color:inherit;
   text-rendering:optimizelegibility;
@@ -403,6 +403,10 @@ h4 small { font-size:14px; }
   padding-bottom:9px;
   margin:20px 0 30px;
   border-bottom:1px solid #eee;
+}
+h1.entry-title {
+  text-align:center;
+  margin:42px 0;
 }
 ul, ol {
   padding:0;
@@ -3798,13 +3802,42 @@ a.label:hover, a.badge:hover {
     overflow:visible !important;
   }
 }
+@font-face {
+  font-family:'Arvo';
+  font-style:normal;
+  font-weight:400;
+  src:url('../font/Arvo-Regular-webfont.eot');
+  src:url('../font/Arvo-Regular-webfont.eot?damnyouie') format('eot'), url('../font/Arvo-Regular-webfont.woff') format('woff'), url('../font/Arvo-Regular-webfont.ttf') format('truetype'), url('../font/Arvo-Regular-webfont.svg#webfontau9vOdrl') format('svg');
+}
+@font-face {
+  font-family:'Arvo';
+  font-style:italic;
+  font-weight:400;
+  src:url('../font/Arvo-Italic-webfont.eot');
+  src:url('../font/Arvo-Italic-webfont.eot?damnyouie') format('eot'), url('../font/Arvo-Italic-webfont.woff') format('woff'), url('../font/Arvo-Italic-webfont.ttf') format('truetype'), url('../font/Arvo-Italic-webfont.svg#webfontvBl98OZ1') format('svg');
+}
+@font-face {
+  font-family:'Arvo';
+  font-style:normal;
+  font-weight:700;
+  src:url('../font/Arvo-Bold-webfont.eot');
+  src:url('../font/Arvo-Bold-webfont.eot?damnyouie') format('eot'), url('../font/Arvo-Bold-webfont.woff') format('woff'), url('../font/Arvo-Bold-webfont.ttf') format('truetype'), url('../font/Arvo-Bold-webfont.svg#webfontxi5Flt4Z') format('svg');
+}
+@font-face {
+  font-family:'Inconsolata';
+  font-style:normal;
+  font-weight:400;
+  src:url('../font/Inconsolata-webfont.eot');
+  src:url('../font/Inconsolata-webfont.eot?damnyouie') format('eot'), url('../font/Inconsolata-webfont.woff') format('woff'), url('../font/Inconsolata-webfont.ttf') format('truetype'), url('../font/Inconsolata-webfont.svg#webfont7qFjZ0xl') format('svg');
+}
 .btn-well-large {
   font-size:21px;
   line-height:21px;
   padding:12px 16px;
 }
 .btn-well-large .icon { margin-top:3px; }
-h1.site-title a {
+h1.site-title { margin:0; }
+h1.site-title  a {
   display:block;
   width:250px;
   height:75px;
