@@ -39,11 +39,13 @@
 				$category_list = get_the_category_list( __( ', ', 'sigerr' ) );
 				$tags = get_the_tags();
 
-				foreach ($tags as $tag){
-					$tag_link = get_tag_link($tag->term_id);
-							
-					$html .= "<a href='{$tag_link}' title='{$tag->name} Tag' class='{$tag->slug}'>";
-					$html .= "{$tag->name}</a>";
+				if ( $tags ) {
+					foreach ($tags as $tag){
+						$tag_link = get_tag_link($tag->term_id);
+								
+						$html .= "<a href='{$tag_link}' title='{$tag->name} Tag' class='{$tag->slug}'>";
+						$html .= "{$tag->name}</a>";
+					}
 				}
 
 				sigerr_posted_on();
