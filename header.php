@@ -47,17 +47,23 @@
 	<?php do_action( 'before' ); ?>
 	<header id="masthead" class="site-header" role="banner">
 		<div class="container">
-			<hgroup>
-				<h1 class="site-title"><a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
-			</hgroup>
+			<div class="row">
 
-			<nav role="navigation" class="site-navigation main-navigation">
-				<h1 class="assistive-text"><?php _e( 'Menu', 'sigerr' ); ?></h1>
-				<div class="assistive-text skip-link"><a href="#content" title="<?php esc_attr_e( 'Skip to content', 'sigerr' ); ?>"><?php _e( 'Skip to content', 'sigerr' ); ?></a></div>
+				<div class="span4">
+					<h1 class="site-title"><a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+				</div>
 
-				<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
-			</nav>
+				<div class="span8">
+					<nav role="navigation" class="site-navigation main-navigation">
+						<h1 class="assistive-text"><?php _e( 'Menu', 'sigerr' ); ?></h1>
+						<div class="assistive-text skip-link"><a href="#content" title="<?php esc_attr_e( 'Skip to content', 'sigerr' ); ?>"><?php _e( 'Skip to content', 'sigerr' ); ?></a></div>
+
+						<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+					</nav>
+				</div>
+
+			</div>
+
 		</div>
 	</header><!-- #masthead .site-header -->
 
