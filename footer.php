@@ -16,7 +16,7 @@
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="container">
 			<div class="row">
-				<div id="about-me" class="span5">
+				<div id="about-me" class="span6">
 
 					<img class="pull-left" width="100px" src="<?php echo get_template_directory_uri() . "/images/julien-bourdeau.jpg";?>" />
 					<p>Hello I'm <strong><a href="http://www.julienbourdeau.com">Julien Bourdeau</a></strong> and I quite love computers.</p>
@@ -29,7 +29,7 @@
 
 				</div><!-- #about-me -->
 
-				<div class="span4 offset1">
+				<div class="span5 offset1">
 
 					<h3>Find me online with this</h3>
 					<div class="clearfix">
@@ -50,11 +50,13 @@
 
 				</div>
 
+				<?php /*
 				<div class="span2">
 					<h3>My resume</h3>
 					<a class="big-pdf-icon" href="http://sigerr.org/cv/CV-julien-bourdeau.pdf"></a>
 				</div>
-
+				*/ ?>
+				
 			</div>
 		</div>
 	</footer><!-- .site-footer .site-footer -->

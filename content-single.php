@@ -31,7 +31,7 @@
 
 	<footer class="entry-meta">
 		<div class="row">
-			<div class="span5">
+			<div class="entry-meta-left span9">
 
 			<?php
 

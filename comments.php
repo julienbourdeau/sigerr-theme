@@ -22,7 +22,8 @@
 		return;
 ?>
 
-	<div id="comments" class="comments-area">
+	<div id="comments" class="comments-area row">
+		<div class="span8 offset2">
 
 	<?php // You can start editing here -- including this comment! ?>
 
@@ -73,4 +74,6 @@
 
 	<?php comment_form(); ?>
 
-</div><!-- #comments .comments-area -->
+		
+		</div>
+	</div><!-- #comments .comments-area -->
