@@ -1,13 +1,15 @@
 
+/* =Fonts
+-------------------------------------------------------------- */
+@font-face{font-family:'Arvo';font-style:normal;font-weight:400;src:url('../fonts/Arvo-Regular-webfont.eot');src:url('../fonts/Arvo-Regular-webfont.eot?damnyouie') format('eot'),url('../fonts/Arvo-Regular-webfont.woff') format('woff'),url('../fonts/Arvo-Regular-webfont.ttf') format('truetype'),url('../fonts/Arvo-Regular-webfont.svg#webfontau9vOdrl') format('svg')}
+@font-face{font-family:'Arvo';font-style:italic;font-weight:400;src:url('../fonts/Arvo-Italic-webfont.eot');src:url('../fonts/Arvo-Italic-webfont.eot?damnyouie') format('eot'),url('../fonts/Arvo-Italic-webfont.woff') format('woff'),url('../fonts/Arvo-Italic-webfont.ttf') format('truetype'),url('../fonts/Arvo-Italic-webfont.svg#webfontvBl98OZ1') format('svg')}
+@font-face{font-family:'Arvo';font-style:normal;font-weight:700;src:url('../fonts/Arvo-Bold-webfont.eot');src:url('../fonts/Arvo-Bold-webfont.eot?damnyouie') format('eot'),url('../fonts/Arvo-Bold-webfont.woff') format('woff'),url('../fonts/Arvo-Bold-webfont.ttf') format('truetype'),url('../fonts/Arvo-Bold-webfont.svg#webfontxi5Flt4Z') format('svg')}
+@font-face{font-family:'Inconsolata';font-style:normal;font-weight:400;src:url('../fonts/Inconsolata-webfont.eot');src:url('../fonts/Inconsolata-webfont.eot?damnyouie') format('eot'),url('../fonts/Inconsolata-webfont.woff') format('woff'),url('../fonts/Inconsolata-webfont.ttf') format('truetype'),url('../fonts/Inconsolata-webfont.svg#webfont7qFjZ0xl') format('svg')}
+
+
 @import "bootstrap/bootstrap.less";
 @import "bootstrap/responsive.less";
 
-/* =Fonts
--------------------------------------------------------------- */
-@font-face{font-family:'Arvo';font-style:normal;font-weight:400;src:url('../font/Arvo-Regular-webfont.eot');src:url('../font/Arvo-Regular-webfont.eot?damnyouie') format('eot'),url('../font/Arvo-Regular-webfont.woff') format('woff'),url('../font/Arvo-Regular-webfont.ttf') format('truetype'),url('../font/Arvo-Regular-webfont.svg#webfontau9vOdrl') format('svg')}
-@font-face{font-family:'Arvo';font-style:italic;font-weight:400;src:url('../font/Arvo-Italic-webfont.eot');src:url('../font/Arvo-Italic-webfont.eot?damnyouie') format('eot'),url('../font/Arvo-Italic-webfont.woff') format('woff'),url('../font/Arvo-Italic-webfont.ttf') format('truetype'),url('../font/Arvo-Italic-webfont.svg#webfontvBl98OZ1') format('svg')}
-@font-face{font-family:'Arvo';font-style:normal;font-weight:700;src:url('../font/Arvo-Bold-webfont.eot');src:url('../font/Arvo-Bold-webfont.eot?damnyouie') format('eot'),url('../font/Arvo-Bold-webfont.woff') format('woff'),url('../font/Arvo-Bold-webfont.ttf') format('truetype'),url('../font/Arvo-Bold-webfont.svg#webfontxi5Flt4Z') format('svg')}
-@font-face{font-family:'Inconsolata';font-style:normal;font-weight:400;src:url('../font/Inconsolata-webfont.eot');src:url('../font/Inconsolata-webfont.eot?damnyouie') format('eot'),url('../font/Inconsolata-webfont.woff') format('woff'),url('../font/Inconsolata-webfont.ttf') format('truetype'),url('../font/Inconsolata-webfont.svg#webfont7qFjZ0xl') format('svg')}
 /*
 .massive{font-size:83px;line-height:96px;letter-spacing:-3px}
 .gigantic{font-size:68px;line-height:72px;letter-spacing:-2px}
@@ -53,7 +55,10 @@ h1.site-title  a {
 /* =Content
 ----------------------------------------------- */
 
-.sticky {
+article.sticky {
+	background: @grayDarker;
+	color: @white;
+	padding: 12px 24px;
 }
 .hentry {
 	margin: 0 0 1.5em;
@@ -124,12 +129,6 @@ a[rel=tag] {
 }
 
 
-/* =Object
--------------------------------------------------------------- */
-.clear {
-	clear:both;
-}
-
 
 /* =Single
 -------------------------------------------------------------- */
@@ -142,6 +141,16 @@ a[rel=tag] {
 /* =Footer
 -------------------------------------------------------------- */
 
+footer#colophon {
+	margin-top: 56px;
+	padding-top: 32px;
+	background: @grayDarker;
+	color: @white;
+	border-top: 12px solid #000;
+	img#my-avatar {
+		margin: 45px 16px 12px 0;
+	}
+}
 .big-icons {
 	float:left;
 	width: 28px;

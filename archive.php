@@ -10,7 +10,7 @@
 
 get_header(); ?>
 
-		<section id="primary" class="site-content span8">
+		<section id="primary" class="site-content span12">
 			<div id="content" role="main">
 
 			<?php if ( have_posts() ) : ?>
@@ -79,7 +79,7 @@ get_header(); ?>
 						 * If you want to overload this in a child theme then include a file
 						 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
 						 */
-						get_template_part( 'content', get_post_format() );
+						get_template_part( 'content', 'blog' );
 					?>
 
 				<?php endwhile; ?>
@@ -95,5 +95,5 @@ get_header(); ?>
 			</div><!-- #content -->
 		</section><!-- #primary .site-content -->
 
-<?php get_sidebar(); ?>
+<?php //get_sidebar(); ?>
 <?php get_footer(); ?>

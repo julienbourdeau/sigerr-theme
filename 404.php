@@ -8,7 +8,7 @@
 
 get_header(); ?>
 
-	<div id="primary" class="site-content span6 offset3">
+	<div id="primary" class="site-content span8 offset2">
 		<div id="content" role="main">
 
 			<article id="post-0" class="post error404 not-found">
@@ -17,7 +17,7 @@ get_header(); ?>
 				</header>
 
 				<div class="entry-content">
-					<p><?php _e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'sigerr' ); ?></p>
+					<p><?php _e( 'It looks like nothing was found at this location. Give it a chance below', 'sigerr' ); ?></p>
 
 					<?php get_search_form(); ?>
 

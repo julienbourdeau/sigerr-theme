@@ -1,3 +1,31 @@
+@font-face {
+  font-family:'Arvo';
+  font-style:normal;
+  font-weight:400;
+  src:url('../fonts/Arvo-Regular-webfont.eot');
+  src:url('../fonts/Arvo-Regular-webfont.eot?damnyouie') format('eot'), url('../fonts/Arvo-Regular-webfont.woff') format('woff'), url('../fonts/Arvo-Regular-webfont.ttf') format('truetype'), url('../fonts/Arvo-Regular-webfont.svg#webfontau9vOdrl') format('svg');
+}
+@font-face {
+  font-family:'Arvo';
+  font-style:italic;
+  font-weight:400;
+  src:url('../fonts/Arvo-Italic-webfont.eot');
+  src:url('../fonts/Arvo-Italic-webfont.eot?damnyouie') format('eot'), url('../fonts/Arvo-Italic-webfont.woff') format('woff'), url('../fonts/Arvo-Italic-webfont.ttf') format('truetype'), url('../fonts/Arvo-Italic-webfont.svg#webfontvBl98OZ1') format('svg');
+}
+@font-face {
+  font-family:'Arvo';
+  font-style:normal;
+  font-weight:700;
+  src:url('../fonts/Arvo-Bold-webfont.eot');
+  src:url('../fonts/Arvo-Bold-webfont.eot?damnyouie') format('eot'), url('../fonts/Arvo-Bold-webfont.woff') format('woff'), url('../fonts/Arvo-Bold-webfont.ttf') format('truetype'), url('../fonts/Arvo-Bold-webfont.svg#webfontxi5Flt4Z') format('svg');
+}
+@font-face {
+  font-family:'Inconsolata';
+  font-style:normal;
+  font-weight:400;
+  src:url('../fonts/Inconsolata-webfont.eot');
+  src:url('../fonts/Inconsolata-webfont.eot?damnyouie') format('eot'), url('../fonts/Inconsolata-webfont.woff') format('woff'), url('../fonts/Inconsolata-webfont.ttf') format('truetype'), url('../fonts/Inconsolata-webfont.svg#webfont7qFjZ0xl') format('svg');
+}
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display:block; }
 audio, canvas, video {
   display:inline-block;
@@ -360,7 +388,7 @@ cite { font-style:normal; }
 .muted { color:#999; }
 h1, h2, h3, h4, h5, h6 {
   margin:40px 0 10px 0;
-  font-family:titleSerifFontFamily;
+  font-family:Georgia, "Times New Roman", Times, serif;
   font-weight:normal;
   line-height:1;
   color:inherit;
@@ -3311,6 +3339,10 @@ a.label:hover, a.badge:hover {
 .show { display:block; }
 .invisible { visibility:hidden; }
 .affix { position:fixed; }
+.clear { clear:both; }
+.no-margin { margin:0; }
+.no-padding { padding:0; }
+.text-centered { text-align:center; }
 .clearfix { *zoom:1; }
 .clearfix:before, .clearfix:after {
   display:table;
@@ -3761,34 +3793,6 @@ a.label:hover, a.badge:hover {
     overflow:visible !important;
   }
 }
-@font-face {
-  font-family:'Arvo';
-  font-style:normal;
-  font-weight:400;
-  src:url('../font/Arvo-Regular-webfont.eot');
-  src:url('../font/Arvo-Regular-webfont.eot?damnyouie') format('eot'), url('../font/Arvo-Regular-webfont.woff') format('woff'), url('../font/Arvo-Regular-webfont.ttf') format('truetype'), url('../font/Arvo-Regular-webfont.svg#webfontau9vOdrl') format('svg');
-}
-@font-face {
-  font-family:'Arvo';
-  font-style:italic;
-  font-weight:400;
-  src:url('../font/Arvo-Italic-webfont.eot');
-  src:url('../font/Arvo-Italic-webfont.eot?damnyouie') format('eot'), url('../font/Arvo-Italic-webfont.woff') format('woff'), url('../font/Arvo-Italic-webfont.ttf') format('truetype'), url('../font/Arvo-Italic-webfont.svg#webfontvBl98OZ1') format('svg');
-}
-@font-face {
-  font-family:'Arvo';
-  font-style:normal;
-  font-weight:700;
-  src:url('../font/Arvo-Bold-webfont.eot');
-  src:url('../font/Arvo-Bold-webfont.eot?damnyouie') format('eot'), url('../font/Arvo-Bold-webfont.woff') format('woff'), url('../font/Arvo-Bold-webfont.ttf') format('truetype'), url('../font/Arvo-Bold-webfont.svg#webfontxi5Flt4Z') format('svg');
-}
-@font-face {
-  font-family:'Inconsolata';
-  font-style:normal;
-  font-weight:400;
-  src:url('../font/Inconsolata-webfont.eot');
-  src:url('../font/Inconsolata-webfont.eot?damnyouie') format('eot'), url('../font/Inconsolata-webfont.woff') format('woff'), url('../font/Inconsolata-webfont.ttf') format('truetype'), url('../font/Inconsolata-webfont.svg#webfont7qFjZ0xl') format('svg');
-}
 .btn-well-large {
   font-size:21px;
   line-height:21px;
@@ -3805,6 +3809,11 @@ h1.site-title  a {
   overflow:hidden;
 }
 .menu-access-container { margin-top:24px; }
+article.sticky {
+  background:#222;
+  color:#fff;
+  padding:12px 24px;
+}
 .hentry { margin:0 0 1.5em; }
 .entry-meta {
   clear:both;
@@ -3846,11 +3855,18 @@ h1.site-title  a {
 .blog-list p { margin:0; }
 a[rel=tag] { text-decoration:none; }
 a[rel=tag] span.label { margin-right:5px; }
-.clear { clear:both; }
 #extrabuttons {
   margin:42px 0;
   text-align:center;
 }
+footer#colophon {
+  margin-top:56px;
+  padding-top:32px;
+  background:#222;
+  color:#fff;
+  border-top:12px solid #000;
+}
+footer#colophon img#my-avatar { margin:45px 16px 12px 0; }
 .big-icons {
   float:left;
   width:28px;

@@ -18,20 +18,20 @@
 			<div class="row">
 				<div id="about-me" class="span6">
 
-					<img class="pull-left" width="100px" src="<?php echo get_template_directory_uri() . "/images/julien-bourdeau.jpg";?>" />
+					<img id="my-avatar" class="pull-left img-polaroid" width="100px" src="<?php echo get_template_directory_uri() . "/images/julien-bourdeau.jpg";?>" />
+					<h3 class="no-margin">About me <small><a href="/about">(more)</a></small> </h3>
 					<p>Hello I'm <strong><a href="http://www.julienbourdeau.com">Julien Bourdeau</a></strong> and I quite love computers.</p>
 					<p>I finished my studies some months ago and now I'm the <stong>co-founder of an innovative
 						start-up in France</strong>. My fresh company built a product on 
-						<a href="http://symfony.com/">Symfony2</a> for small shops and we are member 
-						of the Audencia's incubator (One of the top french business school).</p>
-					<p>I like code a lot so im still doing some extra stuff that you can check out here on
-						on <a href="http://github.com/julienbourdeau">github</a>. <a href="/about">More about me</a></p>
+						<a href="http://symfony.com/">Symfony2</a> for small shops.</p>
+					<?php /* <p>I'm a geek I'm still doing some extra stuff that you can check out on <a href="http://github.com/julienbourdeau">github</a>.</p> 
+					<p><a href="/about">More about me</a></p>*/ ?>
 
 				</div><!-- #about-me -->
 
 				<div class="span5 offset1">
 
-					<h3>Find me online with this</h3>
+					<h3 class="no-margin">Stalk me online</h3>
 					<div class="clearfix">
 						<a id="linkedin" class="social_link" href="http://www.linkedin.com/in/julienbourdeau"></a>
 						<a id="googleplus" class="social_link" href="https://plus.google.com/u/0/106765980258232747369/posts"></a>
@@ -41,11 +41,6 @@
 						<a id="github" class="social_link" href="http://github.com/julienbourdeau/"></a>
 						<a id="youtube" class="social_link" href="http://fr.youtube.com/user/julienbourdeau"></a>
 						<a id="flickr" class="social_link" href="http://www.flickr.com/photos/julienbourdeau/"></a>
-					</div>
-					<div>
-						<div><div id="phone" class="big-icons"></div>(+33) 6 4974 4364</div>
-	                    <div class="clear"></div>
-						<div><div id="skype" class="big-icons"></div>jubourdeau</div>
 					</div>
 
 				</div>
