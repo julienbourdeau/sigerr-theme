@@ -17,6 +17,10 @@ get_header(); ?>
 		<div id="primary" class="site-content span12">
 			<div id="content" role="main">
 
+				<header class="page-header">
+					<h1 class="page-title">Articles</h1>
+				</header><!-- .entry-header -->
+
 			<?php if ( have_posts() ) : ?>
 
 				<?php //sigerr_content_nav( 'nav-above' ); ?>

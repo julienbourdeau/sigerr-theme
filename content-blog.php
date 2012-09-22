@@ -17,7 +17,7 @@
 
 		<div class="span9">
 
-			<header class="">
+			<header class="entry-header">
 				<h2 class="entry-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 			</header><!-- .entry-header -->
 
@@ -52,7 +52,7 @@
 					}
 					
 					if ( '' != $tags ) {
-						echo "Tags: ";
+						//echo "Tags: ";
 						foreach ($tags as $tag):
 							$tag_link = get_tag_link($tag->term_id);
 							echo " <a href='{$tag_link}' title='{$tag->name} Tag' class='{$tag->slug}' rel='tag'>";

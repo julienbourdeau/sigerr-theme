@@ -17,27 +17,12 @@ Eric Meyer http://meyerweb.com/eric/tools/css/reset/index.html
 along with Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 and Blueprint http://www.blueprintcss.org/
 
-Julien Bourdeau's mod
- - Bootstrap
- - visual-editor.css
- - 
- - 
 
 */
 
 
 
 
-
-/* Links */
-a {
-	color: royalblue;
-}
-a:hover,
-a:focus,
-a:active {
-	color: midnightblue;
-}
 
 /* Alignment */
 .alignleft {
@@ -271,48 +256,6 @@ object {
 }
 
 
-
-/* =Shortcodes
--------------------------------------------------------------- */
-
-/* ------- Box Styles ------- */
-
-.gradient_box_middle{background:transparent url(images/gradient_box_middle.gif) repeat-y scroll 0 0;width:625px;}
-.gradient_box_bottom{background:transparent url(images/gradient_box_bottom.gif) no-repeat scroll 0 bottom; padding:26px;position:relative;}
-.gradient_box_top{background:transparent url(images/gradient_box_top.gif) no-repeat scroll 0 top;}
-
-.fancy_box,.download_box,.warning_box,.info_box,.note_box{clear:both;padding:20px;margin: 20px 0px;}
-.download_box,.warning_box,.info_box,.note_box{padding-left:55px;background:#eee;padding-bottom:25px;
-padding-top:20px;}
-.fancy_box{
-	background:#F9F9F9 url(images/form-gradient.gif) repeat-x scroll 0 -7px;
-	border:1px solid #E0E0E0;}
-.info_box{
-	background:#bfe4f9 url(images/icons/info.png) no-repeat scroll 10px 14px;
-	border:1px solid #68a2cf;
-	color:#2e6093;}
-.warning_box{
-	background:#ffcccc url(images/icons/stop.png) no-repeat scroll 10px 15px;
-	border:1px solid #ff9999;
-	color:#c31b00;}
-.download_box{
-	background:#dee3ab url(images/icons/down_alt.png) no-repeat scroll 10px 15px;
-	border:1px solid #a3c159;
-	color:#5e6f33;}
-.note_box{
-	background:#fdebae url(images/icons/notebook.png) no-repeat scroll 10px 15px;
-	border:1px solid #e6c555;
-	color:#9e660d;}
-
-.fancy_header span{
-	background-color:#F9F9F9;
-	color:#888;
-	font-size:12px;
-	letter-spacing:1px;
-	line-height:12px;
-	padding-right:5px;
-	text-transform:uppercase;}	
-.fancy_header{clear:both;padding-left:0;background: url(images/stripes.png) repeat scroll 0 0;margin:14px 0;}
 
 
 
