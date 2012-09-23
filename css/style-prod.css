@@ -3883,6 +3883,37 @@ a[rel=tag] span.label { margin-right:5px; }
   margin:42px 0;
   text-align:center;
 }
+#contactsquare {
+  padding:22px 16px;
+  background:#222;
+  color:#fff;
+  border:8px solid #000;
+  text-align:center;
+  *zoom:1;
+}
+#contactsquare:before, #contactsquare:after {
+  display:table;
+  content:"";
+  line-height:0;
+}
+#contactsquare:after { clear:both; }
+#contactsquare a { color:#fff; }
+#contactsquare a:hover { color:#08c; }
+#contactsquare #my-email-link {
+  font-family:monoFontFamily;
+  font-size:2em;
+  line-height:2.5;
+}
+#contactsquare .contact-links {
+  margin-left:22px;
+  *zoom:1;
+}
+#contactsquare .contact-links:before, #contactsquare .contact-links:after {
+  display:table;
+  content:"";
+  line-height:0;
+}
+#contactsquare .contact-links:after { clear:both; }
 footer#colophon {
   margin-top:56px;
   padding-top:32px;

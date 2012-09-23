@@ -19,9 +19,12 @@ get_header(); ?>
 		<div id="primary" class="site-content span12 full-width">
 			<div id="content" role="main">
 
-				<div class="row">
-					<div class="span6">
+				<div class="row entry-content">
+					<div class="span12">
 						<h2>All my recent posts</h2>
+
+						<p>The list below display all the post I wrote, they are spread on many blogs (too many?). Some are in French, some in English. Enjoy</p>
+
 						<?php ypfwp_display_yahoo_pipe(
 									"http://pipes.yahoo.com/pipes/pipe.run?_id=be111f264562dade4584cd4185a64b73&_render=json",
 									345600,
@@ -31,17 +34,6 @@ get_header(); ?>
 							); ?>
 					</div>
 
-					<div class="span6">
-
-						<h2>My projects</h2>
-						<?php //the_widget(''); ?>
-
-						<?php while ( have_posts() ) : the_post(); ?>
-							<h2><?php the_title(); ?></h2>
-							<?php the_content(); ?>
-						<?php endwhile; // end of the loop. ?>
-
-					</div>
 				</div>
 
 			</div><!-- #content -->

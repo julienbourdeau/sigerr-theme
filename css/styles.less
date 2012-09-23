@@ -173,9 +173,10 @@ a[rel=tag] {
 
 #contactsquare {
 	.clearfix;
-	padding: 16px;
+	padding: 22px 16px;
 	background: @grayDarker;
 	color: @white;
+	border: 8px solid @black;
 	text-align: center;
 	a {
 		color: @white;
@@ -190,7 +191,7 @@ a[rel=tag] {
 	}
 	.contact-links {
 		.clearfix;
-		margin-left: 30px;
+		margin-left: 22px;
 	}
 }
 
@@ -205,6 +206,14 @@ footer#colophon {
 	border-top: 12px solid #000;
 	img#my-avatar {
 		margin: 45px 16px 12px 0;
+	}
+
+	a#my-email-link {
+		color: @white;
+		font-family: monoFontFamily;
+	}
+	a#my-email-link:hover {
+		color: @linkColor;
 	}
 }
 .big-icons {

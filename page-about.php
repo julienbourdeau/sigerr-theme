@@ -22,9 +22,8 @@ get_header(); ?>
 					<h1 class="page-title"><?php the_title(); ?></h1>
 				</header><!-- .entry-header -->
 
-				<div class="row-fluid">
+				<div class="row-fluid entry-content">
 					<div class="span8">
-						<?php the_title(); ?>
 						<?php the_content(); ?>
 					</div>
 
@@ -47,10 +46,10 @@ get_header(); ?>
 				</div>
 
 
-				<div class="row-fluid">
+				<div class="row-fluid entry-content">
 					<div class="span12">
 						<h2>My Resume</h2>
-						[gview file="http://sigerr.org/cv/CV-julien-bourdeau.pdf"]
+						<?php echo do_shortcode( '[gview file="http://sigerr.org/cv/CV-julien-bourdeau.pdf"]' ); ?>
 					</div>
 				</div>
 
