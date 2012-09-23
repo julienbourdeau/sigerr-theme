@@ -3922,6 +3922,11 @@ footer#colophon {
   border-top:12px solid #000;
 }
 footer#colophon img#my-avatar { margin:45px 16px 12px 0; }
+footer#colophon a#my-email-link {
+  color:#fff;
+  font-family:monoFontFamily;
+}
+footer#colophon a#my-email-link:hover { color:#08c; }
 .big-icons {
   float:left;
   width:28px;

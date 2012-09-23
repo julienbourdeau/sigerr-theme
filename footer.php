@@ -43,7 +43,7 @@
 						<a id="flickr" class="social_link" href="http://www.flickr.com/photos/julienbourdeau/"></a>
 					</div>
 
-					<h3 class="">Email me: <small><a id="my-email-link" href="mailto:julien@sigerr.org">julien@sigerr.org</a></small></h3>
+					<h3 class="">Email me: <a id="my-email-link" href="mailto:julien@sigerr.org">julien@sigerr.org</a></h3>
 					
 
 				</div>
