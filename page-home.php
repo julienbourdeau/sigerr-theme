@@ -24,7 +24,7 @@ get_header(); ?>
 						<h2>All my recent posts</h2>
 						<?php ypfwp_display_yahoo_pipe(
 									"http://pipes.yahoo.com/pipes/pipe.run?_id=be111f264562dade4584cd4185a64b73&_render=json",
-									86400,
+									345600,
 									"my-yahoo-pipe",
 									20
 
