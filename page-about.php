@@ -23,21 +23,24 @@ get_header(); ?>
 				</header><!-- .entry-header -->
 
 				<div class="row-fluid">
-					<div class="span9">
+					<div class="span8">
+						<?php the_title(); ?>
 						<?php the_content(); ?>
 					</div>
 
-					<div class="span3">
+					<div class="span4">
 
-						<div id="contactsquare" class="clearfix">
-							<h2>Contact Me</h2>
-							<a href="mailto:julien@sigerr.org">julien@sigerr.org</a>
-							<a href="https://twitter.com/julienbourdeau">@julienbourdeau</a>
-						<hr />
-							<a id="linkedin" class="social_link" href="http://www.linkedin.com/in/julienbourdeau"></a>
-							<a id="googleplus" class="social_link" href="https://plus.google.com/u/0/106765980258232747369/posts"></a>
-							<a id="tumblr" class="social_link" href="http://1670mm.tumblr.com/"></a>
-							<a id="github" class="social_link" href="http://github.com/julienbourdeau/"></a>
+						<div id="contactsquare" class="">
+							<h2 class="no-margin">Contact Me</h2>
+							<a id="my-email-link" href="mailto:julien@sigerr.org">julien@sigerr.org</a>
+
+							<div class="contact-links">
+								<a id="linkedin" class="social_link" href="http://www.linkedin.com/in/julienbourdeau"></a>
+								<a id="googleplus" class="social_link" href="https://plus.google.com/u/0/106765980258232747369/posts"></a>
+								<a id="twitter" class="social_link" href="http://twitter.com/julienbourdeau"></a>
+								<a id="tumblr" class="social_link" href="http://1670mm.tumblr.com/"></a>
+								<a id="github" class="social_link" href="http://github.com/julienbourdeau/"></a>
+							</div>
 						</div>
 
 					</div>
