@@ -1,5 +1,5 @@
 // Create the dropdown base
-jQuery("<select />").appendTo("nav").addClass("visible-phone");
+jQuery("<select />").appendTo("nav").addClass("visible-phone responsive-menu");
 
 // Create default option "Go to..."
 jQuery("<option />", {

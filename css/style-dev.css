@@ -2240,6 +2240,10 @@ a.label:hover, a.badge:hover {
     margin:0;
   }
   .modal.fade.in { top:auto; }
+  select.responsive-menu {
+    width:100%;
+    padding:6px;
+  }
 }
 @media (max-width: 480px) {
   .nav-collapse { -webkit-transform:translate3d(0,0,0); }
