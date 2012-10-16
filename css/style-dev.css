@@ -2386,7 +2386,7 @@ a[rel=tag] span.label { margin-right:5px; }
 #contactsquare .contact-links:after { clear:both; }
 footer#colophon {
   margin-top:56px;
-  padding-top:32px;
+  padding:32px 0;
   background:#222;
   color:#fff;
   border-top:12px solid #000;
