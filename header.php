@@ -61,6 +61,7 @@
 						<?php wp_nav_menu( 
 											array( 	'theme_location' 	=> 'primary',
 													'menu_class'		=> 'nav nav-pills pull-right',
+													'container_class' => 'menu-access-container hidden-phone',
 												 )
 										 ); ?>
 					</nav>

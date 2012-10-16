@@ -23,7 +23,13 @@
 
 
 			<div class="entry-content">
-				<?php the_excerpt(); ?>
+				<div class="visible-desktop visible-tablet">
+					<?php the_excerpt(); ?>
+				</div>
+				<div class="visible-phone">
+					<?php echo substr(get_the_excerpt(), 0, 100); ?>[...]
+				</div>
+				
 				<?php wp_link_pages( 
 									array( 
 										'before' => '<div class="pagination post-inside-pages"><ul>', 

@@ -18,7 +18,7 @@
 			<div class="row">
 				<div id="about-me" class="span6">
 
-					<img id="my-avatar" class="pull-left img-polaroid" width="100px" src="<?php echo get_template_directory_uri() . "/images/julien-bourdeau.jpg";?>" />
+					<img id="my-avatar" class="pull-left img-polaroid hidden-phone" width="100px" src="<?php echo get_template_directory_uri() . "/images/julien-bourdeau.jpg";?>" />
 					<h3 class="no-margin">About me <small><a href="/about">(more)</a></small> </h3>
 					<p>Hello I'm <strong><a href="http://www.julienbourdeau.com">Julien Bourdeau</a></strong> and I quite love computers.</p>
 					<p>I finished my studies some months ago and now I'm the <stong>co-founder of an innovative
