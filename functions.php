@@ -80,6 +80,11 @@ function sigerr_setup() {
 	//require( get_template_directory() . '/inc/theme-options/theme-options.php' );
 
 	/**
+	 * Custom Post Types
+	 */
+	require( get_template_directory() . '/inc/custom-post-types.php' );
+
+	/**
 	 * WordPress.com-specific functions and definitions
 	 */
 	//require( get_template_directory() . '/inc/wpcom.php' );
