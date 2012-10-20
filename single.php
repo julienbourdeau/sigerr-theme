@@ -15,7 +15,7 @@ get_header(); ?>
 
 				<?php //sigerr_content_nav( 'nav-above' ); ?>
 
-				<?php get_template_part( 'content', 'single' ); ?>
+				<?php get_template_part( 'content', get_post_type() ); ?>
 
 				<?php //sigerr_content_nav( 'nav-below' ); ?>
 

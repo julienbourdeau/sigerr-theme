@@ -9,7 +9,9 @@
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?> class="clearfix">
 
 		<div class="span3">
-			<?php the_post_thumbnail('thumbnail'); ?>
+			<a href="<?php the_permalink(); ?>">
+				<?php the_post_thumbnail('thumb'); ?>
+			</a>
 		</div>	
 
 		<div class="span9">
@@ -20,11 +22,8 @@
 
 
 			<div class="entry-content">
-				<div class="visible-desktop visible-tablet">
-					<?php the_excerpt(); ?>
-				</div>
-				<div class="visible-phone">
-					<?php echo get_post_meta( get_the_ID(), 'sigr_question_details', false ); ?>
+				<div class="">
+					<strong>Question: </strong><?php echo get_post_meta( get_the_ID(), 'sigr_question', true ); ?>
 				</div>
 				
 				<?php wp_link_pages( 
