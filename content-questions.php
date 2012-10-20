@@ -9,7 +9,7 @@
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?> class="clearfix">
 
 		<div class="span3">
-			<?php the_post_thumbnail(); ?>
+			<?php the_post_thumbnail('thumbnail'); ?>
 		</div>	
 
 		<div class="span9">

@@ -106,6 +106,7 @@ function sigerr_setup() {
 	 * Enable support for Post Thumbnails
 	 */
 	add_theme_support( 'post-thumbnails' );
+	add_image_size( 'large-thumb', 200, 200, true );
 
 	/**
 	 * Enable visual-editor.css
