@@ -2275,6 +2275,14 @@ a.label:hover, a.badge:hover {
   }
   .carousel-caption { position:static; }
 }
+::selection {
+  background:#222;
+  color:#fff;
+}
+::-moz-selection {
+  background:#222;
+  color:#fff;
+}
 .btn-well-large {
   font-size:21px;
   line-height:21px;
