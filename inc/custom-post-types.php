@@ -1,41 +1,45 @@
 
 <?php
 
-register_post_type('answers', 
-  array(	
-    'label' => 'Questions & Answers',
-    'description' => 'These posts are simple short question and answers. It is meant to help you everyday as a developer.',
-    'public' => true,
-    'show_ui' => true,
-    'show_in_menu' => true,
-    'capability_type' => 'post',
-    'hierarchical' => false,
-    'rewrite' => array(
-      'slug' => 'questions-anwers'
-    ),
-    'query_var' => true,
-    'has_archive' => true,
-    'exclude_from_search' => false,
-    'menu_position' => 4,
-    'supports' => array('title','editor','trackbacks','custom-fields','comments','revisions','thumbnail','author',),
-    'labels' => array (
-      'name' => 'Questions & Answers',
-      'singular_name' => 'Question & Answers',
-      'menu_name' => 'Q&As',
-      'add_new' => 'Add Q&A',
-      'add_new_item' => 'Add New Q&A',
-      'edit' => 'Edit',
-      'edit_item' => 'Edit Q&A',
-      'new_item' => 'New Q&A',
-      'view' => 'View Q&A',
-      'view_item' => 'View Q&A',
-      'search_items' => 'Search Q&A',
-      'not_found' => 'No Q&A found',
-      'not_found_in_trash' => 'No Q&A found in Trash',
-      'parent' => 'Parent Q&A',
-    ),
-  ) 
-);
+
+function sigerr_create_post_type() {
+  register_post_type('answers', 
+    array(	
+      'label' => 'Questions & Answers',
+      'description' => 'These posts are simple short question and answers. It is meant to help you everyday as a developer.',
+      'public' => true,
+      'show_ui' => true,
+      'show_in_menu' => true,
+      'capability_type' => 'post',
+      'hierarchical' => false,
+      'rewrite' => array(
+        'slug' => 'questions-answers'
+      ),
+      'query_var' => true,
+      'has_archive' => true,
+      'exclude_from_search' => false,
+      'menu_position' => 4,
+      'supports' => array('title','editor','trackbacks','custom-fields','comments','revisions','thumbnail','author',),
+      'labels' => array (
+        'name' => 'Questions & Answers',
+        'singular_name' => 'Question & Answers',
+        'menu_name' => 'Q&As',
+        'add_new' => 'Add Q&A',
+        'add_new_item' => 'Add New Q&A',
+        'edit' => 'Edit',
+        'edit_item' => 'Edit Q&A',
+        'new_item' => 'New Q&A',
+        'view' => 'View Q&A',
+        'view_item' => 'View Q&A',
+        'search_items' => 'Search Q&A',
+        'not_found' => 'No Q&A found',
+        'not_found_in_trash' => 'No Q&A found in Trash',
+        'parent' => 'Parent Q&A',
+      ),
+    ) 
+  );
+}
+add_action( 'init', 'sigerr_create_post_type' );
 
 
 /**

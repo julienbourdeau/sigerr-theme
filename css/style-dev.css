@@ -2321,7 +2321,7 @@ h1.site-title  a {
 .byline { display:none; }
 .single .byline, .group-blog .byline { display:inline; }
 .entry-content, .entry-summary {
-  margin:1.5em 0 0;
+  margin:1em 0;
   font-family:"Museo-300", Georgia, "Times New Roman", Times, serif;
   font-size:18px;
   line-height:1.5;
