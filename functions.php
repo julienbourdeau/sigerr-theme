@@ -14,7 +14,12 @@ require_once 'lib/tinyMceAdder.class.php';
  *    - dev = Development
  * 	  - prod = Production
  */
-define('ENV', 'dev');
+if ($_SERVER['SERVER_NAME'] == 'locahost:81') {
+	define('ENV', 'dev');
+} elseif ($_SERVER['SERVER_NAME'] == 'sigerr.org') {
+	define('ENV', 'prod');
+}
+
 
 /**
  * Use LESScss if ENV = dev
