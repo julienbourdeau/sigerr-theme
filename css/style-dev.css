@@ -2299,6 +2299,20 @@ h1.site-title  a {
   overflow:hidden;
 }
 .menu-access-container { margin-top:24px; }
+.answers-title .black-border {
+  position:absolute;
+  z-index:-999;
+  background:#222;
+  height:4px;
+  margin-top:18px;
+  width:960px;
+}
+.answers-title h2 {
+  z-index:999;
+  width:300px;
+  margin:0 auto;
+  background:#fff;
+}
 .page-header {
   border-bottom:4px solid #222;
   text-align:center;
