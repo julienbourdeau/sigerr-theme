@@ -166,8 +166,8 @@ function sigerr_scripts() {
 
 	wp_enqueue_style( 'style', get_stylesheet_uri() );
 	
-	if ( defined('ENV') && !is_admin() ) {
-		wp_enqueue_style( 'style-dev', get_template_directory_uri() . '/css/style-'.ENV.'.css', array( 'style' ) );
+	if ( !is_admin() ) {
+		wp_enqueue_style( 'style-min', get_template_directory_uri() . '/css/style.min.css', array( 'style' ) );
 	}
 
 	//wp_enqueue_script( 'small-menu', get_template_directory_uri() . '/js/small-menu.js', array( 'jquery' ), '20120206', true );
