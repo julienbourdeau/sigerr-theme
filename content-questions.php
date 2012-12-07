@@ -10,7 +10,7 @@
 
 		<div class="span3">
 			<a href="<?php the_permalink(); ?>">
-				<?php the_post_thumbnail('thumb'); ?>
+				<?php the_post_thumbnail('thumbnail'); ?>
 			</a>
 		</div>	
 
