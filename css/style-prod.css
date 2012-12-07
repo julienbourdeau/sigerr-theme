@@ -711,11 +711,15 @@ input[type="checkbox"],input[type="radio"]{border:1px solid #ccc}
 .modal-header .close{padding:10px;margin:-10px}
 .carousel-caption{position:static}
 }
+::selection{background:#222;color:#fff}
+::-moz-selection{background:#222;color:#fff}
 .btn-well-large{font-size:21px;line-height:21px;padding:12px 16px}
 .btn-well-large .icon{margin-top:3px}
 h1.site-title{margin:0}
 h1.site-title a{display:block;width:250px;height:75px;background:url('../images/logo.png');text-indent:-999px;overflow:hidden}
 .menu-access-container{margin-top:24px}
+.answers-title .black-border{position:absolute;z-index:-999;background:#222;height:4px;margin-top:18px;width:960px}
+.answers-title h2{z-index:999;width:300px;margin:0 auto;background:#fff}
 .page-header{border-bottom:4px solid #222;text-align:center}
 .page-header h1{font-size:54px;line-height:54px}
 .hentry{margin:0 0 1.5em}
@@ -725,7 +729,7 @@ h1.site-title a{display:block;width:250px;height:75px;background:url('../images/
 .entry-meta-left{margin-top:8px}
 .byline{display:none}
 .single .byline,.group-blog .byline{display:inline}
-.entry-content,.entry-summary{margin:1.5em 0 0;font-family:"Museo-300",Georgia,"Times New Roman",Times,serif;font-size:18px;line-height:1.5}
+.entry-content,.entry-summary{margin:1em 0 .5em 0;font-family:"Museo-300",Georgia,"Times New Roman",Times,serif;font-size:18px;line-height:1.5}
 .entry-content p,.entry-summary p{margin:0 0 1.5em}
 .page-links{clear:both;margin:0 0 1.5em}
 article.sticky{background:#222;color:#fff;padding:12px 24px}

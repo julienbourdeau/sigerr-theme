@@ -20,10 +20,14 @@
 
 					<img id="my-avatar" class="pull-left img-polaroid hidden-phone" width="100px" src="<?php echo get_template_directory_uri() . "/images/julien-bourdeau.jpg";?>" />
 					<h3 class="no-margin">About me <small><a href="/about">(more)</a></small> </h3>
-					<p>Hello I'm <strong><a href="http://www.julienbourdeau.com">Julien Bourdeau</a></strong> and I quite love computers.</p>
-					<p>I finished my studies some months ago and now I'm the <stong>co-founder of an innovative
+					<p>
+						Hello I'm <strong><a href="http://www.julienbourdeau.com">Julien Bourdeau</a></strong> and I quite love computers.
+					</p>
+					<p>
+						I finished my studies some months ago and now I'm the <strong>co-founder of an innovative
 						start-up in France</strong>. My fresh company built a product on 
-						<a href="http://symfony.com/">Symfony2</a> for small shops.</p>
+						<a href="http://symfony.com/">Symfony2</a> for small shops.
+					</p>
 					<?php /* <p>I'm a geek I'm still doing some extra stuff that you can check out on <a href="http://github.com/julienbourdeau">github</a>.</p> 
 					<p><a href="/about">More about me</a></p>*/ ?>
 
