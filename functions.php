@@ -21,28 +21,6 @@ if ($_SERVER['SERVER_NAME'] == 'locahost:81') {
 }
 
 
-/**
- * Use LESScss if ENV = dev
- */
-if( ENV == 'dev' && !is_admin() ) {
-
-	require 'lib/lessc.inc.php';
-
-	$less_file = get_template_directory() . '/css/styles.less';
-	$css_file = get_template_directory() . '/css/style-dev.css';
-
-	// create a new cache object, and compile
-	$cache = lessc::cexecute( $less_file );
-	file_put_contents($css_file, $cache['compiled']);
-
-	// the next time we run, write only if it has updated
-	$last_updated = $cache['updated'];
-	$cache = lessc::cexecute($cache);
-	if ($cache['updated'] > $last_updated) {
-	    file_put_contents($css_file, $cache['compiled']);
-	}
-
-}
 
 /**
  * Set the content width based on the theme's design and stylesheet.
@@ -167,7 +145,7 @@ function sigerr_scripts() {
 	wp_enqueue_style( 'style', get_stylesheet_uri() );
 	
 	if ( !is_admin() ) {
-		wp_enqueue_style( 'style-min', get_template_directory_uri() . '/css/style.min.css', array( 'style' ) );
+		wp_enqueue_style( 'style-min', get_template_directory_uri() . '/css/styles.min.css', array( 'style' ) );
 	}
 
 	//wp_enqueue_script( 'small-menu', get_template_directory_uri() . '/js/small-menu.js', array( 'jquery' ), '20120206', true );

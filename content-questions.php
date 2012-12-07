@@ -39,7 +39,7 @@
 
 			<footer class="entry-meta clearfix">
 
-				<a href="" class="btn pull-right">Read the answers <i class="icon-chevron-right"></i></a>
+				<a href="<?php the_permalink(); ?>" class="btn pull-right">Get the answers <i class="icon-chevron-right"></i></a>
 
 			</footer><!-- .entry-meta -->
 
