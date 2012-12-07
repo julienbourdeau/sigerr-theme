@@ -1,16 +1,73 @@
 
 /* =Fonts
 -------------------------------------------------------------- */
-@font-face{font-family:'Arvo';font-style:normal;font-weight:400;src:url('../fonts/Arvo-Regular-webfont.eot');src:url('../fonts/Arvo-Regular-webfont.eot?damnyouie') format('eot'),url('../fonts/Arvo-Regular-webfont.woff') format('woff'),url('../fonts/Arvo-Regular-webfont.ttf') format('truetype'),url('../fonts/Arvo-Regular-webfont.svg#webfontau9vOdrl') format('svg')}
-@font-face{font-family:'Arvo';font-style:italic;font-weight:400;src:url('../fonts/Arvo-Italic-webfont.eot');src:url('../fonts/Arvo-Italic-webfont.eot?damnyouie') format('eot'),url('../fonts/Arvo-Italic-webfont.woff') format('woff'),url('../fonts/Arvo-Italic-webfont.ttf') format('truetype'),url('../fonts/Arvo-Italic-webfont.svg#webfontvBl98OZ1') format('svg')}
-@font-face{font-family:'Arvo';font-style:normal;font-weight:700;src:url('../fonts/Arvo-Bold-webfont.eot');src:url('../fonts/Arvo-Bold-webfont.eot?damnyouie') format('eot'),url('../fonts/Arvo-Bold-webfont.woff') format('woff'),url('../fonts/Arvo-Bold-webfont.ttf') format('truetype'),url('../fonts/Arvo-Bold-webfont.svg#webfontxi5Flt4Z') format('svg')}
 @font-face {font-family: 'Museo-300';src: url('../fonts/2429BD_1_0.eot');src: url('../fonts/2429BD_1_0.eot?#iefix') format('embedded-opentype'),url('../fonts/2429BD_1_0.woff') format('woff'),url('../fonts/2429BD_1_0.ttf') format('truetype');}
 @font-face {font-family: 'Museo-500';src: url('../fonts/2429BD_2_0.eot');src: url('../fonts/2429BD_2_0.eot?#iefix') format('embedded-opentype'),url('../fonts/2429BD_2_0.woff') format('woff'),url('../fonts/2429BD_2_0.ttf') format('truetype');}
 @font-face {font-family: 'Museo-700';src: url('../fonts/2429BD_0_0.eot');src: url('../fonts/2429BD_0_0.eot?#iefix') format('embedded-opentype'),url('../fonts/2429BD_0_0.woff') format('woff'),url('../fonts/2429BD_0_0.ttf') format('truetype');}  
 
 
-@import "bootstrap/bootstrap.less";
-@import "bootstrap/responsive.less";
+/*!
+ * Bootstrap v2.1.0
+ *
+ * Copyright 2012 Twitter, Inc
+ * Licensed under the Apache License v2.0
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Designed and built with all the love in the world @twitter by @mdo and @fat.
+ */
+
+// CSS Reset
+@import "bootstrap/reset.less";
+
+// Core variables and mixins
+@import "bootstrap/variables.less"; // Modify this for custom colors, font-sizes, etc
+@import "bootstrap/mixins.less";
+
+// Grid system and page structure
+@import "bootstrap/scaffolding.less";
+@import "bootstrap/grid.less";
+@import "bootstrap/layouts.less";
+
+// Base CSS
+@import "bootstrap/type.less";
+//@import "bootstrap/code.less";
+//@import "bootstrap/forms.less";
+@import "bootstrap/tables.less";
+
+// Components: common
+@import "bootstrap/sprites.less";
+//@import "bootstrap/dropdowns.less";
+//@import "bootstrap/wells.less";
+@import "bootstrap/component-animations.less";
+@import "bootstrap/close.less";
+
+// Components: Buttons & Alerts
+@import "bootstrap/buttons.less";
+@import "bootstrap/button-groups.less";
+@import "bootstrap/alerts.less"; // Note: alerts share common CSS with buttons and thus have styles in buttons.less
+
+// Components: Nav
+@import "bootstrap/navs.less";
+//@import "navbar.less";
+//@import "breadcrumbs.less";
+@import "bootstrap/pagination.less";
+//@import "pager.less";
+
+// Components: Popovers
+//@import "bootstrap/modals.less";
+//@import "bootstrap/tooltip.less";
+//@import "bootstrap/popovers.less";
+
+// Components: Misc
+//@import "bootstrap/thumbnails.less";
+@import "bootstrap/labels-badges.less";
+@import "bootstrap/progress-bars.less";
+//@import "bootstrap/accordion.less";
+//@import "bootstrap/carousel.less";
+//@import "bootstrap/hero-unit.less";
+
+// Utility classes
+@import "bootstrap/utilities.less"; // Has to be last to override when necessary
 
 /*
 .massive{font-size:83px;line-height:96px;letter-spacing:-3px}
@@ -364,3 +421,48 @@ padding-top:20px;}
 	text-transform:uppercase;}	
 .fancy_header{clear:both;padding-left:0;background: url(../images/stripes.png) repeat scroll 0 0;margin:14px 0;}
 
+/*!
+ * Bootstrap Responsive v2.1.0
+ *
+ * Copyright 2012 Twitter, Inc
+ * Licensed under the Apache License v2.0
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Designed and built with all the love in the world @twitter by @mdo and @fat.
+ */
+
+
+// Responsive.less
+// For phone and tablet devices
+// -------------------------------------------------------------
+
+
+// REPEAT VARIABLES & MIXINS
+// -------------------------
+// Required since we compile the responsive stuff separately
+
+
+// RESPONSIVE CLASSES
+// ------------------
+
+@import "bootstrap/responsive-utilities.less";
+
+
+// MEDIA QUERIES
+// ------------------
+
+// Large desktops
+//@import "bootstrap/responsive-1200px-min.less";
+
+// Tablets to regular desktops
+@import "bootstrap/responsive-768px-979px.less";
+
+// Phones to portrait tablets and narrow desktops
+@import "bootstrap/responsive-767px-max.less";
+
+
+// RESPONSIVE NAVBAR
+// ------------------
+
+// From 979px and below, show a button to toggle navbar contents
+//@import "bootstrap/responsive-navbar.less";
