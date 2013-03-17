@@ -25,7 +25,7 @@
 					</p>
 					<p>
 						I finished my studies some months ago and now I'm the <strong>co-founder of an innovative
-						start-up in France</strong>. My fresh company built a product on 
+						start-up in France</strong>. My fresh company built an e-commerce plateform on 
 						<a href="http://symfony.com/">Symfony2</a> for small shops.
 					</p>
 					<?php /* <p>I'm a geek I'm still doing some extra stuff that you can check out on <a href="http://github.com/julienbourdeau">github</a>.</p> 

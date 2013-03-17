@@ -10,6 +10,7 @@
   margin-left: 0;
   margin-bottom: @baseLineHeight;
   list-style: none;
+  //font-family: @museo300FontFamily;
 }
 
 // Make links block level
@@ -65,7 +66,7 @@
 .nav-list > .active > a:hover {
   color: @white;
   text-shadow: 0 -1px 0 rgba(0,0,0,.2);
-  background-color: @linkColor;
+  background-color: @grayDarker;
 }
 .nav-list [class^="icon-"] {
   margin-right: 2px;
@@ -135,11 +136,16 @@
 
 // Links rendered as pills
 .nav-pills > li > a {
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding: 10px 20px;
   margin-top: 2px;
   margin-bottom: 2px;
+  margin-left: 16px;
   .border-radius(5px);
+  color: @white;
+  background-color: @grayDarker;
+}
+.nav-pills > li > a:hover {
+  color: @grayDarker;
 }
 
 // Active state
