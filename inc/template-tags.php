@@ -145,14 +145,13 @@ if ( ! function_exists( 'sigerr_posted_on' ) ) :
  * @since _s 1.0
  */
 function sigerr_posted_on() {
-	printf( __( 'Posted on <a href="%1$s" title="%2$s" rel="bookmark"><time class="entry-date" datetime="%3$s" pubdate>%4$s</time></a><span class="byline"> by <span class="author vcard"><a class="url fn n" href="%5$s" title="%6$s" rel="author">%7$s</a></span></span>', 'sigerr' ),
+	printf( __( '<i class="icon-time"></i> Originally posted on <a href="%1$s" title="%2$s" rel="bookmark"><time class="entry-date" datetime="%3$s" pubdate>%4$s</time></a>. <br> <i class="icon-pencil"></i> <span class="updateline"> Last modified on <a href="%1$s" title="%5$s" rel="bookmark"><time class="entry-date">%6$s</time></a> </span>', 'sigerr' ),
 		esc_url( get_permalink() ),
 		esc_attr( get_the_time() ),
 		esc_attr( get_the_date( 'c' ) ),
 		esc_html( get_the_date() ),
-		esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
-		esc_attr( sprintf( __( 'View all posts by %s', 'sigerr' ), get_the_author() ) ),
-		esc_html( get_the_author() )
+		esc_attr( get_the_modified_time() ),
+		esc_html( get_the_modified_date() )
 	);
 }
 endif;

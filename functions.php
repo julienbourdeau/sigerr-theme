@@ -14,7 +14,7 @@ require_once 'lib/tinyMceAdder.class.php';
  *    - dev = Development
  * 	  - prod = Production
  */
-if ($_SERVER['SERVER_NAME'] == 'locahost:81') {
+if ($_SERVER['SERVER_NAME'] == 'localhost') {
 	define('ENV', 'dev');
 } elseif ($_SERVER['SERVER_NAME'] == 'sigerr.org') {
 	define('ENV', 'prod');
@@ -145,7 +145,7 @@ function sigerr_scripts() {
 	wp_enqueue_style( 'style', get_stylesheet_uri() );
 	
 	if ( !is_admin() ) {
-		wp_enqueue_style( 'style-min', get_template_directory_uri() . '/css/styles.min.css', array( 'style' ) );
+		wp_enqueue_style( 'style-min', get_template_directory_uri() . '/css/styles.css', array( 'style' ) );
 	}
 
 	//wp_enqueue_script( 'small-menu', get_template_directory_uri() . '/js/small-menu.js', array( 'jquery' ), '20120206', true );

@@ -65,7 +65,7 @@
 //@import "bootstrap/accordion.less";
 //@import "bootstrap/carousel.less";
 //@import "bootstrap/hero-unit.less";
-
+ 
 // Utility classes
 @import "bootstrap/utilities.less"; // Has to be last to override when necessary
 
@@ -267,8 +267,8 @@ a[rel=tag] {
 		color: @linkColor;
 	}
 	#my-email-link {
-		font-family: monoFontFamily;
-		font-size: 2em;
+		font-family: @monoFontFamily;
+		font-size: 25px;
 		line-height: 2.5;
 	}
 	.contact-links {
@@ -292,10 +292,13 @@ footer#colophon {
 
 	a#my-email-link {
 		color: @white;
-		font-family: monoFontFamily;
+		font-family: @monoFontFamily;
 	}
 	a#my-email-link:hover {
 		color: @linkColor;
+	}
+	h1,h2,h3,h4,h5,h6 {
+		font-family: @museo300FontFamily;
 	}
 }
 .big-icons {
