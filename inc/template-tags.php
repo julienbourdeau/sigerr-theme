@@ -147,7 +147,8 @@ if ( ! function_exists( 'sigerr_posted_on' ) ) :
 function sigerr_posted_on() {
 	
 	printf( __('<i class="icon-user"></i> Written by <span class="author vcard"><a class="url fn n" href="%1$s" title="%2$s" rel="author">%3$s</a></span>', 'sigerr'),
-		esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
+		//esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
+		esc_url('https://plus.google.com/106765980258232747369?rel=author'),
 		esc_attr( sprintf( __( 'View all posts by %s', 'sigerr' ), get_the_author() ) ),
 		get_the_author()
 	);
