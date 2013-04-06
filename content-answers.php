@@ -61,6 +61,8 @@
 
 					<?php the_content(); ?>
 
+					<?php sigerr_posted_on(); ?>
+
 				</div>
 			</div>
 

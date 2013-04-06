@@ -133,6 +133,14 @@ function sigerr_widgets_init() {
 		'before_title' => '<h1 class="widget-title">',
 		'after_title' => '</h1>',
 	) );
+	register_sidebar( array(
+		'name' => __( 'Home Widget Area', 'sigerr' ),
+		'id' => 'home-widget-area',
+		'before_widget' => '<div id="%1$s" class="span6 widget %2$s">',
+		'after_widget' => "</div>",
+		'before_title' => '<h3 class="widget-title no-margin">',
+		'after_title' => '</h3>',
+	) );
 }
 add_action( 'widgets_init', 'sigerr_widgets_init' );
 

@@ -19,7 +19,7 @@ get_header(); ?>
 
 				<?php //sigerr_content_nav( 'nav-below' ); ?>
 
-				<div class="row">
+				<div class="row-fluid">
 					<div class="span10 offset1">
 						<?php
 							// If comments are open or we have at least one comment, load up the comment template
