@@ -145,6 +145,13 @@ if ( ! function_exists( 'sigerr_posted_on' ) ) :
  * @since _s 1.0
  */
 function sigerr_posted_on() {
+	
+	printf( __('<i class="icon-user"></i> Written by <span class="author vcard"><a class="url fn n" href="%1$s" title="%2$s" rel="author">%3$s</a></span>', 'sigerr'),
+		esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
+		esc_attr( sprintf( __( 'View all posts by %s', 'sigerr' ), get_the_author() ) ),
+		get_the_author()
+	);
+	printf('<br />');
 	printf( __( '<i class="icon-time"></i> Originally posted on <a href="%1$s" title="%2$s" rel="bookmark"><time class="entry-date" datetime="%3$s" pubdate>%4$s</time></a>. <br> <i class="icon-pencil"></i> <span class="updateline"> Last modified on <a href="%1$s" title="%5$s" rel="bookmark"><time class="entry-date">%6$s</time></a> </span>', 'sigerr' ),
 		esc_url( get_permalink() ),
 		esc_attr( get_the_time() ),

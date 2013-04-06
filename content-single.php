@@ -15,7 +15,7 @@
 	<?php sigerr_content_extrabuttons() ?>
 
 
-	<div class="entry-content">TEST
+	<div class="entry-content">
 		<?php the_content(); ?>
 		<?php wp_link_pages( 
 							array( 
