@@ -21,7 +21,10 @@ and Blueprint http://www.blueprintcss.org/
 */
 
 
-
+pre {
+	text-shadow: none;
+	white-space: nowrap;
+}
 
 
 /* Alignment */
