@@ -2190,7 +2190,7 @@ input[type="submit"].btn.btn-mini {
   background-color: #eeeeee;
 }
 .nav-pills > li > a:hover {
-  color: #222222;
+  color: #0088cc;
 }
 .nav-pills > .active > a,
 .nav-pills > .active > a:hover,
@@ -2882,12 +2882,12 @@ ul#menu-access {
   margin: 0 0 1.5em;
 }
 article.sticky {
-  background: #222222;
-  color: #ffffff;
+  background: #eeeeee;
+  color: #222222;
   padding: 12px 24px;
 }
 article.sticky .entry-title a {
-  color: #ffffff;
+  color: #222222;
 }
 article.sticky .entry-title a:hover {
   color: #0088cc;
