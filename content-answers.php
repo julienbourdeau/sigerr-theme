@@ -15,6 +15,13 @@
 		<div class="entry-content">
 
 			<div class="row">
+				<div class="span12">
+					<?php sigerr_posted_on(); ?>
+					<p>&nbsp;</p>
+				</div>
+			</div>
+
+			<div class="row">
 				<div class="span12 answers-title">
 					<div class="black-border visible-desktop"></div>
 					<h2 class="text-centered">The Question</h2>
@@ -60,8 +67,6 @@
 					<h3 class="entry-title"><a href="<?php the_permalink(); ?>"><?php echo get_post_meta( get_the_ID(), 'sigr_answer', true ); ?></a></h3>
 
 					<?php the_content(); ?>
-
-					<?php sigerr_posted_on(); ?>
 
 				</div>
 			</div>
