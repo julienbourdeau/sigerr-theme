@@ -16,6 +16,10 @@
 		<?php endif; ?>
 	</header><!-- .entry-header -->
 
+	
+	<?php sigerr_content_extrabuttons(); ?>
+
+
 	<?php if ( is_search() ) : // Only display Excerpts for Search ?>
 	<div class="entry-summary">
 		<?php the_excerpt(); ?>
@@ -26,6 +30,10 @@
 		<?php wp_link_pages( array( 'before' => '<div class="page-links">' . __( 'Pages:', 'sigerr' ), 'after' => '</div>' ) ); ?>
 	</div><!-- .entry-content -->
 	<?php endif; ?>
+
+	
+	<?php sigerr_content_extrabuttons(); ?>
+
 
 	<footer class="entry-meta" style="text-align: center;">
 		<?php if ( 'post' == get_post_type() ) : // Hide category and tag text for pages on Search ?>
