@@ -5,7 +5,7 @@
  */
 ?>
 
-<div class="row-fluid blog-list">
+<div class="row-fluid">
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?> class="clearfix">
 
 		<header class="entry-header">
