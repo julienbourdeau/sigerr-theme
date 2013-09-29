@@ -1,6 +1,4 @@
-
 <?php
-
 
 function sigerr_create_post_type() {
   register_post_type('answers', 
