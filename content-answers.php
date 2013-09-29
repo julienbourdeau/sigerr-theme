@@ -64,9 +64,13 @@
 			<div class="row">
 				<div class="span12">
 
+					<?php sigerr_adsense_728x90(); ?>
+
 					<h3 class="entry-title"><a href="<?php the_permalink(); ?>"><?php echo get_post_meta( get_the_ID(), 'sigr_answer', true ); ?></a></h3>
 
 					<?php the_content(); ?>
+
+					<?php sigerr_adsense_728x90(); ?>
 
 				</div>
 			</div>

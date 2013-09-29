@@ -48,6 +48,11 @@ function sigerr_setup() {
 	require( get_template_directory() . '/inc/template-tags.php' );
 
 	/**
+	 * Custom template tags for adsense and ads.
+	 */
+	require( get_template_directory() . '/inc/ads.php' );
+
+	/**
 	 * Custom shortcodes that act independently of the theme templates
 	 */
 	require( get_template_directory() . '/inc/shortcodes.php' );

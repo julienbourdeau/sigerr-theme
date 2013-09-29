@@ -598,6 +598,8 @@ ul.postlinkslist{list-style-type:none;margin:0;}
 .note_box{background:#fdebae url(../images/icons/notebook.png) no-repeat scroll 10px 15px;border:1px solid #e6c555;color:#9e660d;}
 .fancy_header span{background-color:#F9F9F9;color:#888;font-size:12px;letter-spacing:1px;line-height:12px;padding-right:5px;text-transform:uppercase;}
 .fancy_header{clear:both;padding-left:0;background:url(../images/stripes.png) repeat scroll 0 0;margin:14px 0;}
+#adsense-250x250-single-post{float:left;margin-right:40px;margin-bottom:30px;}
+#adsense-728x90-single-post{display:block;margin:auto;width:728px;margin-top:12px;}
 .hidden{display:none;visibility:hidden;}
 .visible-phone{display:none !important;}
 .visible-tablet{display:none !important;}

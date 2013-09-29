@@ -202,3 +202,5 @@ function sigerr_category_transient_flusher() {
 }
 add_action( 'edit_category', 'sigerr_category_transient_flusher' );
 add_action( 'save_post', 'sigerr_category_transient_flusher' );
+
+
