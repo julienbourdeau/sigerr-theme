@@ -163,7 +163,7 @@ function sigerr_scripts() {
 	}
 
 	if ( !is_admin() ) {
-		wp_enqueue_script( 'main', get_template_directory_uri() . '/js/main.js', array( 'jquery', 'bootstrap' ), '2.0.4', true );
+		wp_enqueue_script( 'main', get_template_directory_uri() . '/js/main.js', array( 'jquery' ), '2.0.4', true );
 	}
 
 	//if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
