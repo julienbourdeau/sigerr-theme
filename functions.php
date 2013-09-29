@@ -177,6 +177,15 @@ function sigerr_scripts() {
 add_action( 'wp_enqueue_scripts', 'sigerr_scripts' );
 
 /**
+ * Remove some filters
+ */
+
+remove_filter( 'the_content', 'sharing_display', 19 );
+remove_filter( 'the_excerpt', 'sharing_display', 19 );
+
+
+
+/**
  * Implement the Custom Header feature
  */
 //require( get_template_directory() . '/inc/custom-header.php' );

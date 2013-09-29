@@ -35,6 +35,9 @@
 	<?php sigerr_content_extrabuttons(); ?>
 
 
+	<?php echo sharing_display(); ?>
+
+
 	<footer class="entry-meta" style="text-align: center;">
 		<?php if ( 'post' == get_post_type() ) : // Hide category and tag text for pages on Search ?>
 			<?php
