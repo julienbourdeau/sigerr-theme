@@ -532,6 +532,7 @@ a.label:hover,a.badge:hover{color:#ffffff;text-decoration:none;cursor:pointer;}
 .text-centered{text-align:center;}
 ::selection{background:#222222;color:#ffffff;}
 ::-moz-selection{background:#222222;color:#ffffff;}
+strong{font-weight:normal;font-family:"Museo-500";}
 .btn-well-large{font-size:21px;line-height:21px;padding:12px 16px;}.btn-well-large .icon{margin-top:3px;}
 header#masthead{margin-bottom:46px;}
 h1.site-title{margin:0;}
@@ -552,6 +553,7 @@ ul#menu-access{width:607px;margin:auto;}
 .page-links{clear:both;margin:0 0 1.5em;}
 article.sticky{background:#eeeeee;color:#222222;padding:12px 24px;}article.sticky .entry-title a{color:#222222;}
 article.sticky .entry-title a:hover{color:#0088cc;}
+ol,ul{margin-left:64px;}
 ul li,ol li{line-height:1.5;}
 .blog-list article{margin:24px 0;*zoom:1;}.blog-list article:before,.blog-list article:after{display:table;content:"";line-height:0;}
 .blog-list article:after{clear:both;}
