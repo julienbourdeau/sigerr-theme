@@ -51,7 +51,7 @@ get_header(); ?>
 					</div>
 
 					<div class="span4">
-						
+						<?php //the_widget( $widget, $instance, $args ); ?> 
 					</div>
 				</div>
 
