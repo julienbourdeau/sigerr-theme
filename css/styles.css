@@ -555,6 +555,8 @@ article.sticky{background:#eeeeee;color:#222222;padding:12px 24px;}article.stick
 article.sticky .entry-title a:hover{color:#0088cc;}
 ol,ul{margin-left:64px;}
 ul li,ol li{line-height:1.5;}
+ul.post-list{list-style-type:none;margin:0;}ul.post-list li{padding:8px 0;border-top:1px dashed #999999;}ul.post-list li a{float:left;width:80%;color:#222222;font-size:120%;}
+ul.post-list li div.source-date{display:inline;margin-left:5%;}
 .blog-list article{margin:24px 0;*zoom:1;}.blog-list article:before,.blog-list article:after{display:table;content:"";line-height:0;}
 .blog-list article:after{clear:both;}
 .blog-list header,.blog-list header h2{margin:0;padding:0;}

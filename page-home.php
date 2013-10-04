@@ -33,6 +33,28 @@ get_header(); ?>
 
 				</div>
 
+				<div class="row-fluid">
+					
+					<div class="span8">
+
+						<h2>Lastest posts from my blogs</h2>
+
+						<?php 
+							wprss_display_feed_items( $args = array(
+								'links_before' => '<ul class="post-list">',
+								'links_after' => '</ul>',
+								'link_before' => '<li class="clearfix">',
+								'link_after' => '</li>'
+							)); 
+						?>
+						
+					</div>
+
+					<div class="span4">
+						
+					</div>
+				</div>
+
 
 				<div class="row-fluid">
 
