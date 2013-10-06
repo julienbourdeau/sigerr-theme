@@ -51,19 +51,10 @@ get_header(); ?>
 					</div>
 
 					<div class="span4">
-						<?php //the_widget( $widget, $instance, $args ); ?> 
+						
+						<?php do_shortcode('[twitter-widget username="julienbourdeau"]'); ?> 
+
 					</div>
-				</div>
-
-
-				<div class="row-fluid">
-
-					<?php if ( is_active_sidebar( 'home-widget-area' ) ) : ?>
-
-							<?php dynamic_sidebar( 'home-widget-area' ); ?>
-
-					<?php endif; ?>
-
 				</div>
 
 
