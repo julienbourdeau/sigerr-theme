@@ -41,10 +41,10 @@ get_header(); ?>
 
 						<?php 
 							wprss_display_feed_items( $args = array(
-								'links_before' => '<ul class="post-list">',
-								'links_after' => '</ul>',
-								'link_before' => '<li class="clearfix">',
-								'link_after' => '</li>'
+								'links_before' 	=> '<ul class="post-list">',
+								'links_after' 	=> '</ul>',
+								'link_before' 	=> '<li class="clearfix">',
+								'link_after' 	=> '</li>',
 							)); 
 						?>
 						
@@ -52,7 +52,7 @@ get_header(); ?>
 
 					<div class="span4">
 						
-						<?php do_shortcode('[twitter-widget username="julienbourdeau"]'); ?> 
+						<?php echo do_shortcode('[twitter-widget username="julienbourdeau"]'); ?> 
 
 					</div>
 				</div>
