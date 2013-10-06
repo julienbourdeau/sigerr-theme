@@ -52,7 +52,7 @@ get_header(); ?>
 
 					<div class="span4">
 						
-						<?php echo do_shortcode('[twitter-widget username="julienbourdeau"]'); ?> 
+						<?php echo do_shortcode('[twitter-widget username="julienbourdeau" before_widget="<div>" after_widget="</div>" before_title="<h3>" after_title="</h3>" errmsg="Uh oh!" hiderss="true" hidereplies="true" targetBlank="true" avatar="0" showXavisysLink="1" items="3" showts="60"]Lastest from twitter[/twitter-widget]'); ?> 
 
 					</div>
 				</div>
