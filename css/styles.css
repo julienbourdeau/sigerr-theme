@@ -609,8 +609,7 @@ ul.postlinkslist{list-style-type:none;margin:0;}
 #adsense-728x90-single-post{display:block;margin:auto;width:728px;margin-top:12px;}
 .widget_twitter ul{margin:0;list-style-type:none;}
 .widget_twitter ul li{margin-left:0px;margin-bottom:3em;padding-top:.4em;max-width:26em;}
-.widget_twitter ul li:before{font-size:22px;top:-0.2em;}
-.widget_twitter ul li span.entry-content{position:relative;display:block;margin-left:2em;padding:1em 1.4em;background:#f7f7f7;}
+.widget_twitter ul li span.entry-content{position:relative;display:block;margin-left:1em;padding:0.8em 1em;background:#f7f7f7;font-size:16px;}
 .widget_twitter ul li span.entry-content:before{content:'';position:absolute;top:0;right:100%;width:0;height:0;border-top:13px solid #e7e7e7;border-left:15px solid transparent;}
 .widget_twitter ul li .time-meta a{float:right;margin-top:.4em;color:#aaa;border-bottom:none;letter-spacing:0px;}
 .widget_twitter ul li .time-meta a:hover{border-bottom:1px dotted #aaaaaa;}
