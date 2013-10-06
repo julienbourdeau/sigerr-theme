@@ -557,6 +557,9 @@ ol,ul{margin-left:64px;}
 ul li,ol li{line-height:1.5;}
 ul.post-list{list-style-type:none;margin:0;}ul.post-list li{padding:8px 0;border-top:1px dashed #999999;}ul.post-list li a{float:left;width:80%;color:#222222;font-size:120%;}
 ul.post-list li div.source-date{clear:none;float:right;margin-left:5%;}
+ul.post-list li span.flag{float:left;width:16px;height:16px;margin:4px 6px 0px 0px;background:url("../images/icons.png");}
+ul.post-list li span.flag-fr{background-position:-80px -80px;}
+ul.post-list li span.flag-uk{background-position:-120px -80px;}
 .blog-list article{margin:24px 0;*zoom:1;}.blog-list article:before,.blog-list article:after{display:table;content:"";line-height:0;}
 .blog-list article:after{clear:both;}
 .blog-list header,.blog-list header h2{margin:0;padding:0;}

@@ -11,7 +11,6 @@ jQuery("<option />", {
 // Populate dropdown with menu items
 jQuery("nav ul.nav li a").each(function() {
  var el = jQuery(this);
- console.log(el);
  jQuery("<option />", {
      "value"   : el.attr("href"),
      "text"    : el.text()
@@ -21,3 +20,9 @@ jQuery("nav ul.nav li a").each(function() {
 jQuery("nav select").change(function() {
   window.location = jQuery(this).find("option:selected").val();
 });
+
+
+// Add flags before link in the post list (homepage)
+jQuery('ul.post-list a[href^="http://www.post-hit.net"]').before("<span class='flag flag-fr'></span>");
+jQuery('ul.post-list a[href^="http://www.sigerr.org"]').before("<span class='flag flag-uk'></span>");
+jQuery('ul.post-list a[href^="http://www.julienbourdeau.com"]').before("<span class='flag flag-fr'></span> <span class='flag flag-uk'></span>");
