@@ -2,6 +2,7 @@
 
 /**
  * Display adsense in the page
+ * This is not used anymore
  *
  * @since _s 1.0
  */
