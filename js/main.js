@@ -23,6 +23,6 @@ jQuery("nav select").change(function() {
 
 
 // Add flags before link in the post list (homepage)
-jQuery('ul.post-list a[href^="http://www.post-hit.net"]').before("<span class='flag flag-fr'></span>");
+jQuery('ul.post-list a[href^="http://blog.julienbourdeau.com"]').before("<span class='flag flag-fr'></span>");
 jQuery('ul.post-list a[href^="http://www.sigerr.org"]').before("<span class='flag flag-uk'></span>");
-jQuery('ul.post-list a[href^="http://www.julienbourdeau.com"]').before("<span class='flag flag-fr'></span> <span class='flag flag-uk'></span>");
+jQuery('ul.post-list a[href^="http://travel.julienbourdeau.com"]').before("<span class='flag flag-fr'></span> <span class='flag flag-uk'></span>");

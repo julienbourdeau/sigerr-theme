@@ -15,7 +15,7 @@
 		<div class="entry-content">
 
 			<div class="row">
-				<div class="span12">
+				<div class="span12" style="font-size: 14px;">
 					<?php sigerr_posted_on(); ?>
 					<p>&nbsp;</p>
 				</div>

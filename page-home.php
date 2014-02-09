@@ -52,7 +52,7 @@ get_header(); ?>
 
 					<div class="span4 offset1">
 						
-						<?php echo do_shortcode('[twitter-widget username="julienbourdeau" before_widget="<div class=\'widget_twitter\'>" after_widget="</div>" before_title="<h3>" after_title="</h3>" errmsg="Uh oh!" hiderss="true" hidereplies="true" targetBlank="true" items="4" showts="259200" showintents="false" showfollow="true"]Lastest from Twitter[/twitter-widget]'); ?> 
+						<?php echo do_shortcode('[twitter-widget username="julienbourdeau" before_widget="<div class=\'widget_twitter\'>" after_widget="</div>" before_title="<h3>" after_title="</h3>" errmsg="Uh oh!" hiderss="true" hidereplies="true" targetBlank="true" items="3" showts="259200" showintents="false" showfollow="true"]Lastest from Twitter[/twitter-widget]'); ?> 
 
 					</div>
 				</div>
